@@ -1,0 +1,63 @@
+/* src/components/JobsRoute/index.css */
+.jobs-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.jobs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.job-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .jobs-container {
+    padding: 8px;
+  }
+  .job-card {
+    padding: 8px;
+  }
+}
+
+/* src/components/JobItemDetailsRoute/index.css */
+.job-details-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 16px;
+}
+
+.job-details-card,
+.similar-jobs {
+  flex: 1;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.similar-jobs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.similar-jobs li {
+  margin-bottom: 16px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .job-details-container {
+    flex-direction: column;
+    padding: 8px;
+  }
+}
